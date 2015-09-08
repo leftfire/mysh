@@ -1,0 +1,348 @@
+[INFO][2015-09-08 16:26:50,298][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [config/spring.xml]
+[INFO][2015-09-08 16:26:50,660][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [config/spring-hibernate.xml]
+[INFO][2015-09-08 16:26:50,755][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@5cde6b02: startup date [Tue Sep 08 16:26:50 CST 2015]; root of context hierarchy
+[INFO][2015-09-08 16:26:51,199][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config/config.properties]
+[ERROR][2015-09-08 16:26:51,501][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-09-08 16:26:51,646][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-09-08 16:26:52,124][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-09-08 16:26:52,132][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-09-08 16:26:52,135][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-09-08 16:26:52,137][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-09-08 16:26:52,700][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-09-08 16:26:52,892][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-09-08 16:26:52,899][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-09-08 16:26:53,178][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-09-08 16:26:53,179][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-09-08 16:26:53,183][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-09-08 16:26:53,210][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: test.user
+[INFO][2015-09-08 16:26:53,210][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, username, password]
+[INFO][2015-09-08 16:26:53,211][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-09-08 16:26:53,211][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-09-08 16:26:53,211][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-09-08 16:26:53,307][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-09-08 16:26:51",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:2022724342, ConnectTime:"2015-09-08 16:26:52", UseCount:2, LastActiveTime:"2015-09-08 16:26:53"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-09-08 16:26:53,433][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1) for test context [DefaultTestContext@31526886 testClass = UserDaoTest, testInstance = com.spring.dao.UserDaoTest@194c4eb6, testMethod = testIsExist@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@60c39bb3 testClass = UserDaoTest, locations = '{classpath:config/spring.xml, classpath:config/spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@4a233666]; rollback [true]
+[WARN][2015-09-08 16:26:53,535][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 50.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-09-08 16:26:53,537][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 65.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-09-08 16:26:53,778][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Rolled back transaction after test execution for test context [DefaultTestContext@31526886 testClass = UserDaoTest, testInstance = com.spring.dao.UserDaoTest@194c4eb6, testMethod = testIsExist@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@60c39bb3 testClass = UserDaoTest, locations = '{classpath:config/spring.xml, classpath:config/spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2015-09-08 16:26:53,783][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@5cde6b02: startup date [Tue Sep 08 16:26:50 CST 2015]; root of context hierarchy
+[INFO][2015-09-08 16:26:53,798][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-09-08 16:39:02,104][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [config/spring.xml]
+[INFO][2015-09-08 16:39:02,459][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [config/spring-hibernate.xml]
+[INFO][2015-09-08 16:39:02,551][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@52df888a: startup date [Tue Sep 08 16:39:02 CST 2015]; root of context hierarchy
+[INFO][2015-09-08 16:39:02,769][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config/config.properties]
+[ERROR][2015-09-08 16:39:03,134][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-09-08 16:39:03,260][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-09-08 16:39:03,750][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-09-08 16:39:03,758][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-09-08 16:39:03,761][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-09-08 16:39:03,762][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-09-08 16:39:04,218][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-09-08 16:39:04,379][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-09-08 16:39:04,386][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-09-08 16:39:04,648][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-09-08 16:39:04,649][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-09-08 16:39:04,653][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-09-08 16:39:04,710][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: test.user
+[INFO][2015-09-08 16:39:04,710][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, username, password]
+[INFO][2015-09-08 16:39:04,710][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-09-08 16:39:04,710][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-09-08 16:39:04,711][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-09-08 16:39:04,879][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-09-08 16:39:03",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1965567578, ConnectTime:"2015-09-08 16:39:04", UseCount:2, LastActiveTime:"2015-09-08 16:39:04"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[WARN][2015-09-08 16:39:05,095][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 50.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-09-08 16:39:05,096][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 65.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-09-08 16:39:05,312][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@52df888a: startup date [Tue Sep 08 16:39:02 CST 2015]; root of context hierarchy
+[INFO][2015-09-08 16:39:05,328][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-09-08 16:40:09,578][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [config/spring.xml]
+[INFO][2015-09-08 16:40:09,947][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [config/spring-hibernate.xml]
+[INFO][2015-09-08 16:40:10,058][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@284a6c0: startup date [Tue Sep 08 16:40:10 CST 2015]; root of context hierarchy
+[INFO][2015-09-08 16:40:10,375][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config/config.properties]
+[ERROR][2015-09-08 16:40:10,662][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-09-08 16:40:10,789][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-09-08 16:40:11,241][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-09-08 16:40:11,249][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-09-08 16:40:11,252][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-09-08 16:40:11,254][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-09-08 16:40:11,755][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-09-08 16:40:11,911][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-09-08 16:40:11,918][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-09-08 16:40:12,174][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-09-08 16:40:12,174][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-09-08 16:40:12,178][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-09-08 16:40:12,205][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: test.user
+[INFO][2015-09-08 16:40:12,205][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, username, password]
+[INFO][2015-09-08 16:40:12,205][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-09-08 16:40:12,205][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-09-08 16:40:12,206][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-09-08 16:40:12,327][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-09-08 16:40:10",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:152044213, ConnectTime:"2015-09-08 16:40:11", UseCount:2, LastActiveTime:"2015-09-08 16:40:12"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[WARN][2015-09-08 16:40:12,540][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 50.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-09-08 16:40:12,542][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 65.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-09-08 16:40:12,767][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@284a6c0: startup date [Tue Sep 08 16:40:10 CST 2015]; root of context hierarchy
+[INFO][2015-09-08 16:40:12,781][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-09-08 16:40:58,133][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [config/spring.xml]
+[INFO][2015-09-08 16:40:58,491][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [config/spring-hibernate.xml]
+[INFO][2015-09-08 16:40:58,654][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@284a6c0: startup date [Tue Sep 08 16:40:58 CST 2015]; root of context hierarchy
+[INFO][2015-09-08 16:40:58,881][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config/config.properties]
+[ERROR][2015-09-08 16:40:59,172][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-09-08 16:40:59,310][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-09-08 16:40:59,767][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-09-08 16:40:59,774][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-09-08 16:40:59,776][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-09-08 16:40:59,778][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-09-08 16:41:00,201][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-09-08 16:41:00,401][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-09-08 16:41:00,414][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-09-08 16:41:00,645][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-09-08 16:41:00,645][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-09-08 16:41:00,650][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-09-08 16:41:00,696][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: test.user
+[INFO][2015-09-08 16:41:00,697][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, username, password]
+[INFO][2015-09-08 16:41:00,697][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-09-08 16:41:00,697][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-09-08 16:41:00,698][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-09-08 16:41:00,799][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-09-08 16:40:59",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1965567578, ConnectTime:"2015-09-08 16:41:00", UseCount:2, LastActiveTime:"2015-09-08 16:41:00"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[WARN][2015-09-08 16:41:01,023][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 50.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-09-08 16:41:01,024][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 65.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-09-08 16:41:01,242][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@284a6c0: startup date [Tue Sep 08 16:40:58 CST 2015]; root of context hierarchy
+[INFO][2015-09-08 16:41:01,256][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-09-08 17:28:39,334][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [config/spring.xml]
+[INFO][2015-09-08 17:28:39,682][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [config/spring-hibernate.xml]
+[INFO][2015-09-08 17:28:39,836][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@3bb779cf: startup date [Tue Sep 08 17:28:39 CST 2015]; root of context hierarchy
+[INFO][2015-09-08 17:28:40,070][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config/config.properties]
+[ERROR][2015-09-08 17:28:40,401][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-09-08 17:28:40,618][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-09-08 17:28:41,098][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-09-08 17:28:41,105][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-09-08 17:28:41,107][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-09-08 17:28:41,109][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-09-08 17:28:41,664][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-09-08 17:28:41,818][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-09-08 17:28:41,826][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-09-08 17:28:42,113][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-09-08 17:28:42,113][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-09-08 17:28:42,117][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-09-08 17:28:42,179][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: test.user
+[INFO][2015-09-08 17:28:42,180][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, username, password]
+[INFO][2015-09-08 17:28:42,180][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-09-08 17:28:42,180][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-09-08 17:28:42,181][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-09-08 17:28:42,290][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-09-08 17:28:40",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:931198764, ConnectTime:"2015-09-08 17:28:41", UseCount:2, LastActiveTime:"2015-09-08 17:28:42"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-09-08 17:28:42,401][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1) for test context [DefaultTestContext@4e358ab7 testClass = UserDaoTest, testInstance = com.spring.dao.UserDaoTest@1d261c7e, testMethod = testIsExist@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3118a325 testClass = UserDaoTest, locations = '{classpath:config/spring.xml, classpath:config/spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@487eeb51]; rollback [true]
+[WARN][2015-09-08 17:28:42,505][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 50.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-09-08 17:28:42,507][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 65.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-09-08 17:28:42,726][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Rolled back transaction after test execution for test context [DefaultTestContext@4e358ab7 testClass = UserDaoTest, testInstance = com.spring.dao.UserDaoTest@1d261c7e, testMethod = testIsExist@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3118a325 testClass = UserDaoTest, locations = '{classpath:config/spring.xml, classpath:config/spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2015-09-08 17:28:42,769][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@3bb779cf: startup date [Tue Sep 08 17:28:39 CST 2015]; root of context hierarchy
+[INFO][2015-09-08 17:28:42,780][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-09-08 17:30:44,793][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [config/spring.xml]
+[INFO][2015-09-08 17:30:45,149][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [config/spring-hibernate.xml]
+[INFO][2015-09-08 17:30:45,269][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1741055a: startup date [Tue Sep 08 17:30:45 CST 2015]; root of context hierarchy
+[INFO][2015-09-08 17:30:45,619][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config/config.properties]
+[ERROR][2015-09-08 17:30:46,194][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-09-08 17:30:46,434][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-09-08 17:30:46,978][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-09-08 17:30:46,985][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-09-08 17:30:46,988][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-09-08 17:30:46,989][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-09-08 17:30:47,458][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-09-08 17:30:47,635][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-09-08 17:30:47,642][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-09-08 17:30:47,911][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-09-08 17:30:47,911][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-09-08 17:30:47,915][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-09-08 17:30:47,962][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: test.user
+[INFO][2015-09-08 17:30:47,962][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, username, password]
+[INFO][2015-09-08 17:30:47,963][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-09-08 17:30:47,963][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-09-08 17:30:47,963][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-09-08 17:30:48,059][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-09-08 17:30:45",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:931198764, ConnectTime:"2015-09-08 17:30:47", UseCount:2, LastActiveTime:"2015-09-08 17:30:47"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-09-08 17:30:48,180][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1) for test context [DefaultTestContext@4e358ab7 testClass = UserDaoTest, testInstance = com.spring.dao.UserDaoTest@1d261c7e, testMethod = testIsExist@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3118a325 testClass = UserDaoTest, locations = '{classpath:config/spring.xml, classpath:config/spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@487eeb51]; rollback [true]
+[WARN][2015-09-08 17:30:48,278][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 50.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-09-08 17:30:48,280][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 65.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-09-08 17:30:48,475][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Rolled back transaction after test execution for test context [DefaultTestContext@4e358ab7 testClass = UserDaoTest, testInstance = com.spring.dao.UserDaoTest@1d261c7e, testMethod = testIsExist@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3118a325 testClass = UserDaoTest, locations = '{classpath:config/spring.xml, classpath:config/spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2015-09-08 17:30:48,580][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1741055a: startup date [Tue Sep 08 17:30:45 CST 2015]; root of context hierarchy
+[INFO][2015-09-08 17:30:48,592][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-09-08 17:31:25,936][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-09-08 17:31:26,024][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Tue Sep 08 17:31:26 CST 2015]; root of context hierarchy
+[INFO][2015-09-08 17:31:26,064][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [config/spring.xml]
+[INFO][2015-09-08 17:31:26,261][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [config/spring-hibernat.xml]
+[ERROR][2015-09-08 17:31:26,263][org.springframework.web.context.ContextLoader]Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [config/spring-hibernat.xml]; nested exception is java.io.FileNotFoundException: class path resource [config/spring-hibernat.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:343)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:540)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:798)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:444)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:789)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:294)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1341)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.startWebapp(JettyWebAppContext.java:296)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1334)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:741)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:497)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:365)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:163)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.start(Server.java:380)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:347)
+	at org.eclipse.jetty.maven.plugin.JettyServer.doStart(JettyServer.java:76)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:543)
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:360)
+	at org.eclipse.jetty.maven.plugin.JettyRunMojo.execute(JettyRunMojo.java:167)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: java.io.FileNotFoundException: class path resource [config/spring-hibernat.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:158)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
+	... 64 more
+[INFO][2015-09-08 17:32:54,400][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-09-08 17:32:54,470][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Tue Sep 08 17:32:54 CST 2015]; root of context hierarchy
+[INFO][2015-09-08 17:32:54,505][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [config/spring.xml]
+[INFO][2015-09-08 17:32:54,691][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [config/spring-hibernate.xml]
+[INFO][2015-09-08 17:32:54,970][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config/config.properties]
+[INFO][2015-09-08 17:32:54,975][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[ERROR][2015-09-08 17:32:55,379][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2015-09-08 17:32:55,474][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-09-08 17:32:55,871][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2015-09-08 17:32:55,878][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2015-09-08 17:32:55,880][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-09-08 17:32:55,882][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-09-08 17:32:56,281][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2015-09-08 17:32:56,497][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-09-08 17:32:56,502][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-09-08 17:32:56,688][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2015-09-08 17:32:56,688][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2015-09-08 17:32:56,693][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2015-09-08 17:32:56,831][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: test.user
+[INFO][2015-09-08 17:32:56,832][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [id, username, password]
+[INFO][2015-09-08 17:32:56,832][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2015-09-08 17:32:56,832][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2015-09-08 17:32:56,833][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2015-09-08 17:32:56,958][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-09-08 17:32:55",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:709801035, ConnectTime:"2015-09-08 17:32:56", UseCount:2, LastActiveTime:"2015-09-08 17:32:56"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-09-08 17:32:57,010][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2610 ms
+[INFO][2015-09-08 17:32:57,345][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcher': initialization started
+[INFO][2015-09-08 17:32:57,349][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Tue Sep 08 17:32:57 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-09-08 17:32:57,351][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from URL [file:/D:/wk4/helloworld/target/classes/config/spring-mvc.xml]
+[INFO][2015-09-08 17:32:57,500][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO][2015-09-08 17:32:57,598][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/hello],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.controller.HelloWorldController.hello(java.lang.String,org.springframework.ui.Model)
+[INFO][2015-09-08 17:32:57,599][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.spring.controller.Login.Gologin()
+[INFO][2015-09-08 17:32:58,532][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/assets/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-09-08 17:32:58,629][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'dispatcher': initialization completed in 1284 ms
+[WARN][2015-09-08 17:33:40,643][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcher'
