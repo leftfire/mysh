@@ -29,6 +29,7 @@ public class UserDaoImpl implements IUserDao {
 		Query query=session.createQuery(hql);
 		query.setString(0, user.getUsername());
 		query.setString(1, user.getPassword());
+		
 		if(query.list().size()>=1){
 			return true;
 		}
