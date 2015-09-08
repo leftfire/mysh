@@ -42,6 +42,7 @@ public class UserEntity {
 	
 	@Override
 	public String toString(){
-		return "";
+		return "User [ \nid : " + this.id + "\nusername : " + this.username
+				+ "\npassword : " + this.password + " ]";
 	}
 }
