@@ -7,6 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.stereotype.Repository;
+
 //用户实体
 @Table(name="user")
 @Entity
@@ -14,6 +16,17 @@ public class UserEntity {
 	private int id;
 	private String username;
 	private String password;
+	private String email;
+	
+	
+	
+	@Column(name="email",length=32,nullable=false)
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="ID",nullable=false,length=16)

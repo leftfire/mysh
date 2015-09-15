@@ -1,39 +1,53 @@
 package com.spring.dao.impl;
 
-import javax.annotation.Resource;
-
-import org.hibernate.Query;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.spring.dao.IUserDao;
 import com.spring.entity.UserEntity;
-@Repository("userDao")
-public class UserDaoImpl implements IUserDao {
-
-	@Resource
-	protected SessionFactory sessionFactory;
-	public Session getSession(){
-		return sessionFactory.getCurrentSession();
-	}
+import com.spring.utils.Hibernate;
+@Repository
+public class UserDaoImpl extends Hibernate implements IUserDao{
 	
-	public void setSessionFactory(SessionFactory sessionFactory){
-		this.sessionFactory=sessionFactory;
-	}
+	private Transaction transaction = null;	
 	
 	
-	public boolean isExist(UserEntity user) {
-		Session session=this.getSession();
-		String hql="from UserEntity where username=? and password=?";
-		Query query=session.createQuery(hql);
-		query.setString(0, user.getUsername());
-		query.setString(1, user.getPassword());
-		
-		if(query.list().size()>=1){
-			return true;
-		}
+	
+	@Override
+	public boolean getUserbyUserName(String name) {
+		// TODO 自动生成的方法存根
 		return false;
+	}
+
+	@Override
+	@Transactional
+	public boolean addUser(UserEntity user) {
+		System.out.println(user.getUsername());
+		System.out.println(user.getPassword());
+		System.out.println(user.getEmail());
+		try {
+			//transaction.begin();
+			getCurrentSession().save(user);
+			
+			
+			
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+	}
+
+	@Override
+	public void updateUser(UserEntity user) {
+		// TODO 自动生成的方法存根
+
+	}
+
+	@Override
+	public void deleteUser(UserEntity user) {
+		// TODO 自动生成的方法存根
+
 	}
 
 }
